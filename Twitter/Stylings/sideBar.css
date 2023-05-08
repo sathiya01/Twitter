@@ -1,0 +1,73 @@
+.parentDiv {
+  padding-left: 50px;
+}
+.buttonTweet {
+  border: none;
+  width: 200px;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #1d9bf0;
+  color: #fff;
+}
+.buttonTweet:hover {
+  background-color: #0000be;
+}
+
+.sideBarOption {
+  padding: 5px;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.sideBarOption:hover {
+  background-color: lightgray;
+  border-radius: 15px;
+}
+.sideBarOptionsContainer {
+  margin: 10px 0px 20px 0px;
+}
+.profileContainer {
+  width: 100%;
+  overflow: hidden;
+}
+.profileContainer:hover {
+  background-color: lightgray;
+  border-radius: 25px;
+}
+.profile {
+  float: left; /* add this */
+  padding: 5px;
+  text-align: center;
+}
+.profileIcon {
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  background-color: inherit;
+}
+.twitterIcon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  border-style: none;
+}
+.twitterIcon:hover {
+  background-color: lightgray;
+}
+.iconBorder {
+  padding-right: 10px;
+}
+.iconContainer {
+  float: left; /* add this */
+  width: 24px;
+  padding-left: 8px;
+}
+.icon {
+  font-size: 20px;
+  color: #454545;
+}
+.moreIcon {
+  margin-top: 30px;
+}

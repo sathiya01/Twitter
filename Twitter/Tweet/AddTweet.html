@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>New Tweet</title>
+    <link rel="stylesheet" href="../Stylings/AddTweet.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+    />
+  </head>
+  <body>
+    <div class="addTweetContainer">
+      <div>
+        <input type="radio" id="tab1" name="tabs" checked />
+        <label for="tab1" class="tabBar">For you</label>
+        <input type="radio" id="tab2" name="tabs" />
+        <label for="tab2" class="tabBar">Following</label>
+
+        <section id="content1">
+          <iframe src="./newTweet.html" seamless></iframe>
+        </section>
+
+        <section id="content2">
+          <iframe src="./newTweet.html" seamless></iframe>
+        </section>
+      </div>
+      <div>
+        <button class="iconButton">
+          <i class="fa-regular fa-face-smile"></i>
+        </button>
+        <button class="iconButton">
+          <i class="fa-regular fa-paperclip"></i>
+        </button>
+        <button class="iconButton" disabled>
+          <i class="fa-regular fa-paperclip"></i>
+        </button>
+
+        <button class="tweetButton" disabled>Tweet</button>
+      </div>
+    </div>
+  </body>
+</html>

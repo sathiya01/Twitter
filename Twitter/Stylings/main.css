@@ -1,0 +1,9 @@
+.mainContainer {
+  width: 700px;
+  height: 4000px;
+  display: flex;
+}
+.sideBar {
+  width: 30%;
+  height: 1000%;
+}
