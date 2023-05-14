@@ -1,6 +1,7 @@
 .parentDiv {
   padding-left: 50px;
 }
+
 .buttonTweet {
   border: none;
   width: 200px;
@@ -14,29 +15,34 @@
   background-color: #0000be;
 }
 
+.sideBarOptionsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
 .sideBarOption {
-  padding: 5px;
-  margin-bottom: 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
+  line-height: 30px;
+  margin: 5px;
 }
 .sideBarOption:hover {
   background-color: lightgray;
   border-radius: 15px;
 }
-.sideBarOptionsContainer {
-  margin: 10px 0px 20px 0px;
-}
+
 .profileContainer {
   width: 100%;
-  overflow: hidden;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
 }
 .profileContainer:hover {
   background-color: lightgray;
   border-radius: 25px;
 }
 .profile {
-  float: left; /* add this */
+  /* float: left; add this */
   padding: 5px;
   text-align: center;
 }

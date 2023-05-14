@@ -13,11 +13,23 @@
   border: 1px solid #e0e0e0;
   backface-visibility: hidden;
   padding-left: 50px;
-  /* margin-left: 20%; */
 }
 
 .searchInput::placeholder {
   color: color(#575756 a(0.8));
   text-transform: uppercase;
   letter-spacing: 1.5px;
+}
+
+.searchInput:focus + .searchResult {
+  display: block;
+}
+
+.searchResult {
+  display: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
 }

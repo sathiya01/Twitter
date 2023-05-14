@@ -11,27 +11,24 @@ section {
   padding: 20px 0 0;
 }
 
-input {
-  display: none;
-}
-
 label {
   display: inline-block;
   text-align: center;
   color: #bbb;
   padding: 15px 25px;
 }
-
 label:hover {
   color: #888;
   cursor: pointer;
   background-color: lightgray;
 }
 
+input {
+  display: none;
+}
 input:checked + label {
   color: #555;
   border-bottom: 2px solid lightgray;
-  /* text-decoration: underline; */
 }
 
 #tab1:checked ~ #content1,
@@ -42,6 +39,11 @@ input:checked + label {
 
 iframe[seamless] {
   border: none;
+}
+
+.iconButtonContainer {
+  display: flex;
+  flex-direction: row;
 }
 
 .iconButton {
@@ -57,6 +59,7 @@ iframe[seamless] {
 .iconButton:enabled:hover {
   background-color: lightgray;
   border-radius: 20px;
+  text-align: center;
 }
 .iconButton:disabled i {
   color: gray;
@@ -71,16 +74,12 @@ iframe[seamless] {
   background-color: #1d9bf0;
   color: #fff;
   float: right;
-  margin-right: 50px;
-  margin-top: 10px;
+  margin-left: auto;
 }
 .tweetButton:disabled {
   background-color: lightblue;
 }
+
 .tabBar {
   width: 250px;
 }
-
-/* .addTweetContainer {
-  width: 40%;
-} */
