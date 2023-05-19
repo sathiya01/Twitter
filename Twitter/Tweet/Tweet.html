@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>New Tweet</title>
+    <link rel="stylesheet" href="../Stylings/SearchTweet.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+    />
+  </head>
+  <body onload="fetchFromAnotherJson()">
+    <div>
+      <div id="name">Elon Musk</div>
+      <div id="sublabel1">Here goes line number 1</div>
+      <div id="sublabel2">Here goes line 2</div>
+    </div>
+    <script type="text/javascript" src="../JS/index.js"></script>
+    <script type="text/javascript">
+      async function fetchFromAnotherJson() {
+        var users = await getTweet();
+        console.log(users);
+        // postFromAnotherJson();
+        updateFromAnotherJsonFile();
+        // document.getElementById("name").innerHTML = users[0].
+      }
+
+      async function postFromAnotherJson() {
+        var result = await postTweet();
+        console.log(result);
+      }
+
+      async function updateFromAnotherJsonFile() {
+        var result = await updateTweet();
+        console.log(result);
+      }
+    </script>
+  </body>
+</html>
