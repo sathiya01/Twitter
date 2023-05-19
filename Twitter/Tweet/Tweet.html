@@ -19,21 +19,29 @@
     <script type="text/javascript" src="../JS/index.js"></script>
     <script type="text/javascript">
       async function fetchFromAnotherJson() {
-        var users = await getTweet();
-        console.log(users);
+        const updateDiv = (id) => (content) =>
+          (document.getElementById(id).innerHTML = content);
+        const nameDiv = updateDiv("name");
+        const subLabel1Div = updateDiv("sublabel1");
+        const subLabel2Div = updateDiv("sublabel2");
+        var user = await getTweet();
+        const parsedValue = JSON.parse(user);
+        // console.log(parsedValue);
+        nameDiv(parsedValue.name);
+        subLabel1Div(parsedValue.data.tweet_text);
+        subLabel2Div(parsedValue.data.Account_handle);
         // postFromAnotherJson();
-        updateFromAnotherJsonFile();
-        // document.getElementById("name").innerHTML = users[0].
+        // updateFromAnotherJsonFile();
       }
 
       async function postFromAnotherJson() {
         var result = await postTweet();
-        console.log(result);
+        // console.log(result);
       }
 
       async function updateFromAnotherJsonFile() {
         var result = await updateTweet();
-        console.log(result);
+        // console.log(result);
       }
     </script>
   </body>
